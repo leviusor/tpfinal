@@ -21,11 +21,11 @@ function setup() {
 function draw() {
   background(220);
   
-  // Mostrar texto de la pantalla actual
+  // texto de la pantalla actual
   fill(0);
   text(pantallas[pantallaActual].texto, width / 2, height / 3);
   
-  // Mostrar opciones
+  // Mostrar opciones para el cambio
   for (let i = 0; i < pantallas[pantallaActual].opciones.length; i++) {
     let opcion = pantallas[pantallaActual].opciones[i];
     let y = height / 2 + i * 50;
@@ -51,7 +51,7 @@ function mousePressed() {
   }
 }
 
-// Función para cambiar el contenido de una pantalla
+// Función cambia el contenido de la pantalla
 function cambiarPantalla(numero, texto, opcion1, siguiente1, opcion2, siguiente2) {
   if (numero >= 0 && numero < 20) {
     pantallas[numero] = {
@@ -64,5 +64,3 @@ function cambiarPantalla(numero, texto, opcion1, siguiente1, opcion2, siguiente2
   }
 }
 
-// Ejemplo de cómo cambiar el contenido de una pantalla:
-// cambiarPantalla(0, "Bienvenido a la aventura", "Ir al bosque", 1, "Ir a la montaña", 2);
