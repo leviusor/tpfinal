@@ -34,7 +34,7 @@ let pantallas = {
   "pantalla12": ["pantalla15"],
   "pantalla13": ["pantalla15"],
   "pantalla14": ["pantalla1"],
-  "pantalla15": ["pantalla1"] // Vuelve al inicio al terminar
+  "pantalla15": ["pantalla1"] 
 };
 
 function setup() {
